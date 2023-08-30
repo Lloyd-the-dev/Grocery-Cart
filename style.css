@@ -4,10 +4,26 @@ body{
     user-select: none;
 
 }
+.nav-ish{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
 .main-heading{
-    margin: 2rem;
-    text-align: center;
-
+    margin-left: 15rem;
+    text-transform: capitalize;
+}
+.nav-ish a{
+    text-decoration: none;
+    color: black;
+    transition: .5s ease-in-out;
+}
+.nav-ish a:hover{
+    color: purple;
 }
 .container{
     background-color: #ffffff;
@@ -20,6 +36,9 @@ body{
     flex-direction: column;
     align-items: center;
     /* max-width: 500px; */
+}
+.container form{
+    margin-left: 9rem;
 }
 @media (max-width: 1000px) {
     .container{
@@ -37,24 +56,24 @@ body{
 }
 .input-field{
     font-family: 'Rubik', sans-serif;
-    padding: .7rem;
+    padding: .3rem;
     border-radius: 8px;
     border: 1px solid #432000;
     color: #432000;
     background-color: #DCE1EB;
     margin: .7rem;
     width: 40%;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
 }
 .input-field:focus{
     outline: none;
 }
 .btn{
-    padding: .8rem;
+    padding: .4rem;
     border:none;
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     border-radius: 8px;
     width: 45%;

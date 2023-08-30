@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Your Cart | 2023</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cart-it | signin</title>
+
+  <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <h1 class="main-heading">Grocery Checklist</h1>
-    <div class="container">
-        <img src="./groceries.png" alt="" class="img">
-        <input type="text" id="inp-el" placeholder="Grocery....." class="input-field">
-        <button id="btn" class="btn">Add to cart</button>
-        <ul class="items" id="shopping-list">
-
-        </ul>
+  <h1 class="title">Cart-<span>It</span></h1>
+  <div class="container">
+    <input type="checkbox" id="check">
+    <div class="login form">
+      <header>Login</header>
+      <form action="./php/login.php" method="post">
+        <input type="text" placeholder="Enter your Username" name="username">
+        <input type="password" placeholder="Enter your password" name="password">
+        <button type="submit" class="button" name="submit">Login</button>
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+         <label for="check">Signup</label>
+        </span>
+      </div>
     </div>
+    <div class="registration form">
+        <header>Signup</header>
+        <form method="post" action="./php/signup.php">
+            <input type="text" placeholder="Enter your Username" name="username">
+            <input type="text" placeholder="Enter your email" name="email">
+            <input type="password" placeholder="Create a password" name="password">
+            <input type="password" placeholder="Confirm your password" name="copassword">
+            <button type="submit" class="button" name="submit">Signup</button>
+        </form>
+        <div class="signup">
+            <span class="signup">Already have an account?
+            <label for="check">Login</label>
+            </span>
+        </div>
+    </div>
+  </div>
 
-    <script src="index.js" type="module"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>
